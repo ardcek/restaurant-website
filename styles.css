@@ -1,0 +1,219 @@
+/*======================================================================*/
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    padding: 1rem 0; /* Başlık alanı içi boşluk */
+}
+
+h2 {
+    color: #333; /* Başlık rengi */
+}
+
+.bg-light {
+    background-color: #f8f9fa !important; /* Arka plan rengi */
+}
+
+footer {
+    font-size: 0.9rem; /* Footer yazı boyutu */
+}
+
+/* Genel Stil */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+section h2 {
+    color: #333; /* Başlık rengi */
+}
+
+/* Uyarı Butonu */
+.btn-warning {
+    background-color: #ff9900; /* Buton rengi */
+    border: none; /* Kenarlık yok */
+}
+
+.btn-warning:hover {
+    background-color: #cc7a00; /* Hoverda buton rengi */
+}
+
+
+/*======================================================================*/
+
+
+/* ========== Footer Yazıları ========== */
+footer h5 {
+    font-size: 18px; /* Alt başlık font boyutu */
+    text-transform: uppercase; /* Büyük harf */
+    letter-spacing: 1px; /* Harfler arası boşluk */
+}
+
+footer p, footer ul {
+    font-size: 14px; /* Paragraf ve liste yazı boyutu */
+    line-height: 1.8; /* Satır yüksekliği */
+}
+
+footer a {
+    transition: color 0.3s; /* Hover geçişi */
+}
+
+footer a:hover {
+    color: #ff9900; /* Link hover rengi */
+}
+
+/* Footer Input ve Button Stil */
+footer .input-group .form-control {
+    border: none; /* Kenarlık yok */
+    border-radius: 0; /* Köşeleri yuvarlatma */
+}
+
+footer .input-group .btn {
+    border-radius: 0; /* Köşeleri yuvarlatma */
+    background-color: #ff9900; /* Buton rengi */
+    color: #fff; /* Yazı rengi */
+}
+
+footer .input-group .btn:hover {
+    background-color: #cc7a00; /* Hoverda buton rengi */
+}
+
+
+/*======================================================================*/
+
+
+/* Play Button Stil */
+.play-button a {
+    background-color: rgba(255, 153, 0, 0.8); /* Sarı arka plan */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Gölgeleme */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+.play-button a:hover {
+    background-color: #ff9900; /* Hover rengi */
+    transform: scale(1.1); /* Boyut büyütme */
+}
+
+
+/*======================================================================*/
+
+
+/* Menü Kart Görselleri */
+.menu-image {
+    height: 250px; /* Kart görsellerinin sabit yüksekliği */
+    width: 100%;   /* Kart genişliği */
+    object-fit: cover; /* Görselin kırpılması */
+    border-top-left-radius: 50px; /* Yuvarlatılmış sol üst köşe */
+    border-top-right-radius: 5px; /* Sağ üst köşe */
+}
+
+/*======================================================================*/
+
+/* Kartlar için Hover Efekti */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Kart hover animasyonu */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hafif yukarı kayma */
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2); /* Gölgeleme */
+}
+
+/*======================================================================*/
+
+/* Ayrım Çizgisi (index kartları ayrım çizgisi) */
+.card-title + hr {
+    margin: 0.5rem auto; /* Çizginin üst ve alt boşlukları */
+    width: 50%; /* Çizginin genişliği */
+    border: 1px solid #ffc107; /* Çizgi rengi */
+}
+
+/*======================================================================*/
+
+/* Form Kutuları*/
+form label {
+    color: #ffc107; /* Etiket metni rengi */
+    font-weight: bold; /* Etiket kalın */
+}
+
+form input,
+form textarea,
+form select {
+    background-color: #212529; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    border: 1px solid #ffc107; /* Kenarlık rengi */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa; /* Placeholder rengi */
+}
+
+/* Form Butonu */
+form .btn-warning {
+    background-color: #ffc107; /* Buton arka plan rengi */
+    color: #000; /* Buton metni rengi */
+    font-weight: bold; /* Kalın yazı */
+    padding: 15px 30px; /* Buton iç boşluğu */
+    border: none; /* Kenarlık yok */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+form .btn-warning:hover {
+    background-color: #e0a800; /* Hoverda buton rengi */
+    color: #fff; /* Hoverda yazı rengi */
+}
+
+/*======================================================================*/
+
+/* Video Arka Plan Kısmı*/
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Saydam siyah arka plan */
+}
+
+/* Play Button */
+.play-button a {
+    background-color: gold; /* Altın rengi arka plan */
+    color: #333; /* Siyah yazı */
+}
+
+.play-button a:hover {
+    background-color: gold; /* Hoverda altın rengi */
+    color: #fff; /* Hoverda beyaz yazı */
+}
+
+/*======================================================================*/
+
+/* Rezervasyon Bölümü Başlığı için */
+h3.text-warning {
+    margin-bottom: 2rem; /* Alt boşluğu azalt */
+    font-size: 1.75rem; /* Başlık boyutu küçült */
+}
+
+/* Form Alanı Genel Ayarı */
+#booking .col-md-6.p-5 {
+    padding: rem 1.5rem; /* Form alanı iç boşluk */
+}
+
+/* Form İçindeki Elemanlar */
+form .mb-3 {
+    margin-bottom: 1rem; /* Form elemanı alt boşluğu */
+}
+
+form .btn-warning {
+    padding: 10px 20px; /* Buton iç boşluğu */
+    font-size: 1rem; /* Buton metni boyutu */
+}
+
+/*======================================================================*/
+
+html {
+    
+    scroll-behavior: smooth;
+
+}

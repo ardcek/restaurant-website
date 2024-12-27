@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbeg</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+    h3{
+    font-size: 2rem; /* Metin boyutunu ayarlar */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    }
+
+    #booking {
+    
+        margin-bottom: 0; /* Alt boşluğu sıfırla */
+        padding: 3rem 0; /* Üst ve alt padding'i küçült */
+        min-height: 50vh; /* Minimum yükseklik ayarı (isteğe bağlı küçültülebilir) */
+    
+    }
+    
+    .navbar-nav .nav-item {
+        
+        margin-right: 20px; /* Menü öğeleri arasındaki boşluk */
+    
+    }
+    
+    .navbar-brand {
+        font-family: 'Arial', sans-serif; /* Modern yazı tipi */
+    
+    }
+
+
+      
+</style>
+      
+</head>
+    
+<body>
+
+    <!-- Header-->
+    <header class="header bg-dark text-white shadow-lg"> 
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="d-flex align-items-center">
+                <i class="fa-solid fa-utensils me-2" style="color: gold; font-size: 2rem;"></i>
+                <a class="navbar-brand text-warning fs-2 fw-bold" href="index.html">Arbeg</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menü</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#booking">Rezervasyon Yap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkımızda</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    
+
+        
+        
+<!-- Hakkımızda Bölümü -->
+
+<div class="px-4 pt-5 my-5 text-center border-bottom" style="background-color: #f8f9fa;">
+    <h1 class="display-4 fw-bold text-body-emphasis">Restaurantımız</h1>
+    <div class="col-lg-8 mx-auto">
+        <p class="lead mb-4 text-muted">
+            Restaurantımızda her damak zevkine hitap eden leziz yemeklerimizle, unutulmaz bir yemek deneyimi sunuyoruz. 
+            Geleneksel mutfağımızı modern bir dokunuşla buluşturduğumuz menümüz ve şık atmosferimizle misafirlerimizi ağırlıyoruz.
+            Siz de bu eşsiz deneyimi yaşamak için bize katılın.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a href="menu.html" class="btn btn-warning btn-lg">Menüyü Gör</a>
+            <a href="#booking" class="btn btn-outline-dark btn-lg">Rezervasyon Yap</a>
+        </div>
+    </div>
+
+    <div class="overflow-hidden" style="max-height: 40vh;">
+        <div class="container px-5">
+            <img src="index-gorsel/meal1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Lezzetli Yemekler" style="object-fit: cover; height: 400px; width: 100%;" loading="lazy">
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Menü Bölümü -->
+
+<section id="menu" class="py-5" style="background-color: #333;">
+    <div class="container text-white">
+        <div class="text-center mb-5">
+            <h2 class="text-warning">Menümüz</h2>
+            <p class="text-light">Zengin lezzet yelpazemizle unutulmaz bir deneyim yaşayın. Özenle hazırlanmış yemeklerimizle damak zevkinize hitap ediyoruz.</p>
+        </div>
+        <div class="row g-4">
+
+            <!-- Menü Kartı - Başlangıçlar -->
+           
+            <div class="col-lg-4 col-md-6">
+                <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                    <img src="index-gorsel/starter.jpg" class="card-img-top menu-image" alt="Başlangıçlar" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning text-center">Başlangıçlar</h4>
+                        <hr class="text-warning">
+                        <p class="card-text">Lezzetli ve taze başlangıç seçeneklerimizle, yemeklerinize nefis bir başlangıç yapın. Farklı soğuk ve sıcak meze seçeneklerimiz sizi bekliyor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menü Kartı - Ana Yemekler -->
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                    <img src="index-gorsel/main-course.jpg" class="card-img-top menu-image" alt="Ana Yemekler" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning text-center">Ana Yemekler</h4>
+                        <hr class="text-warning">
+                        <p class="card-text">Zengin ana yemek seçeneklerimizle, her damağa hitap ediyoruz. Farklı mutfaklardan özenle seçilmiş lezzetler sizleri bekliyor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menü Kartı - Tatlılar -->
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                    <img src="index-gorsel/dessert.jpg" class="card-img-top menu-image" alt="Tatlılar" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning text-center">Tatlılar</h4>
+                        <hr class="text-warning">
+                        <p class="card-text">Yemeğinizi tatlı ile sonlandırın. Enfes tatlı seçeneklerimizle damağınızda muazzam bir iz bırakın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Müşteri Memnuniyeti Bölümü -->
+
+<section id="customer-reviews" class="container py-5">
+    <h2 class="text-center text-warning display-4 fw-bold mb-5">Müşteri Memnuniyeti</h2>
+    
+    <div class="row">
+        <!-- Müşteri 1 -->
+       
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg p-4 h-100">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <img src="index-gorsel/customer1.jpeg" alt="Müşteri 1" class="rounded-3" width="80" height="80" style="object-fit: cover;"/>
+                        <div class="ms-3">
+                            <h5 class="mb-1 text-warning">Begüm Ö.</h5>
+                            <small class="text-muted">Gastronomi Blogger</small>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                    </div>
+                </div>
+                <p class="mt-3 text-muted">"Yemeklerin tadı ve sunumu gerçekten olağanüstü. Personel çok profesyonel ve güler yüzlü. Atmosfer ise gerçekten harika; her şey çok özenle hazırlanmış. Restoranınızın menüsü de oldukça geniş, her tat damağınıza hitap ediyor. Burada geçirdiğimiz vakit gerçekten çok keyifliydi, tekrar geleceğiz!"</p>
+            </div>
+        </div>
+
+        <!-- Müşteri 2 -->
+       
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg p-4 h-100">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <img src="index-gorsel/customer2.jpg" alt="Müşteri 2" class="rounded-3" width="80" height="80" style="object-fit: cover;"/>
+                        <div class="ms-3">
+                            <h5 class="mb-1 text-warning">Arda Ç.</h5>
+                            <small class="text-muted">Yemek Eleştirmeni</small>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                    </div>
+                </div>
+                <p class="mt-3 text-muted">"Restoranınız gerçekten harika. Geniş menü seçeneği ve taze malzemelerle hazırlanan yemekler damak zevkimizi tam anlamıyla tatmin etti. Özellikle tatlılarınız olağanüstü. Atmosferi çok beğendik, çok rahat ve huzurlu bir ortam sunuyorsunuz. Servis de oldukça hızlı ve profesyonel." </p>
+            </div>
+        </div>
+
+        <!-- Müşteri 3 -->
+        
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-lg p-4 h-100">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <img src="index-gorsel/customer3.png" alt="Müşteri 3" class="rounded-3" width="80" height="80" style="object-fit: cover;"/>
+                        <div class="ms-3">
+                            <h5 class="mb-1 text-warning">Abubakar M.</h5>
+                            <small class="text-muted">Müşteri</small>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                        <span class="fa fa-star text-warning"></span>
+                    </div>
+                </div>
+                <p class="mt-3 text-muted">"Restoranınızda geçirdiğimiz zamanın her dakikasını çok beğendik. Hem yemekler hem de atmosfer mükemmeldi. Personel çok ilgili ve servis hızlıydı. Özellikle menünüzdeki yenilikçi tatlar çok hoşuma gitti. Tatlılarınız da harika! Mutlaka tekrar geleceğiz!"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Genel Değerlendirme -->
+   
+    <div class="text-center mt-5">
+        <h4 class="text-warning">Genel Değerlendirme</h4>
+        <div class="stars mb-3">
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+        </div>
+        <p class="text-muted">5 üzerinden 5 yıldız</p>
+    </div>
+</section>
+
+
+
+
+
+<section id="booking" class="container-fluid py-5 bg-dark text-white">
+    <div class="row align-items-center">
+
+        <!-- Video ve Görsel Alanı -->
+        <div class="col-md-6 p-0">
+            <div class="position-relative h-100">
+                <img src="index-gorsel/recep ivedik.jpg" class="img-fluid w-100 h-100 object-fit-cover rounded-start" alt="Restaurant Görseli">
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+                <div class="play-button position-absolute top-50 start-50 translate-middle">
+                    <a href="https://www.youtube.com/watch?v=1A27alPgjqE&ab_channel=Recep%C4%B0vedik" target="_blank" class="btn btn-warning rounded-circle p-4">
+                        <i class="fas fa-play fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rezervasyon Formu Alanı -->
+        <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+            <h3 class="text-center mb-4 text-warning fw-bold">Rezervasyon Yap</h3>
+            <form>
+                <!-- Ad Soyad -->
+                <div class="mb-3">
+                    <label for="ad">Adınız</label>
+                    <input type="text" id="ad" class="form-control" placeholder="Adınız" required>
+                </div>
+
+                <!-- E-posta -->
+                <div class="mb-3">
+                    <label for="email">E-posta Adresiniz</label>
+                    <input type="email" id="email" class="form-control" placeholder="E-posta Adresiniz" required>
+                </div>
+
+                <!-- Tarih ve Saat -->
+                <div class="mb-3">
+                    <label for="tarih">Rezervasyon Tarihi</label>
+                    <input type="datetime-local" id="tarih" class="form-control" required>
+                </div>
+
+                <!-- Kişi Sayısı -->
+                <div class="mb-3">
+                    <label for="kisi">Kişi Sayısı</label>
+                    <select id="kisi" class="form-select" required>
+                        <option value="" disabled selected>Kişi Sayısı</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+
+                <!-- Özel İstekler -->
+                <div class="mb-3">
+                    <label for="istekler">Özel İstekleriniz</label>
+                    <textarea id="istekler" class="form-control" rows="3" placeholder="Özel İstekleriniz"></textarea>
+                </div>
+
+                <!-- Buton -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-warning">Rezervasyon Yap</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Şubelerimiz Bölümü -->
+
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom text-center display-4 fw-bold">Şubelerimiz</h2>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+       
+        <!-- İstanbul Şubesi -->
+       
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('index-gorsel/istanbul-restaurant.jpg'); background-size: cover; background-position: center; height: 600px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="display-4 fw-bold">İstanbul</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ankara Şubesi -->
+       
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('index-gorsel/ankara-restaurant.jpg'); background-size: cover; background-position: center; height: 600px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="display-4 fw-bold">Ankara</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Antalya Şubesi -->
+       
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('index-gorsel/antalya-restaurant.jpg'); background-size: cover; background-position: center; height: 600px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="display-4 fw-bold">Antalya</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- İzmir Şubesi -->
+       
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('index-gorsel/izmir-restaurant.jpg'); background-size: cover; background-position: center; height: 600px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="display-4 fw-bold">İzmir</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paris Şubesi -->
+       
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('index-gorsel/paris-restaurant.jpg'); background-size: cover; background-position: center; height: 600px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="display-4 fw-bold">Paris</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- New York Şubesi -->
+       
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('index-gorsel/newyork-restaurant.jpg'); background-size: cover; background-position: center; height: 600px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="display-4 fw-bold">New York</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer Kısmı -->
+    <footer class="bg-dark text-light pt-5 pb-4 mb-0">
+        <div class="container">
+            <div class="row">
+                <!-- Şirket Bölümü -->
+                <div class="col-md-3">
+                    <h5 class="text-warning mb-4">Şirket</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="hakkımızda.html" class="text-white text-decoration-none">Hakkımızda</a></li>
+                        <li><a href="iletisim.html" class="text-white text-decoration-none">İletişim</a></li>
+                        <li><a href="index.html#booking" class="text-white text-decoration-none">Rezervasyon</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Gizlilik Politikası</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Şartlar ve Koşullar</a></li>
+                    </ul>
+                </div>
+    
+                <!-- İletişim Bölümü -->
+                <div class="col-md-3">
+                    <h5 class="text-warning mb-4">İletişim</h5>
+                    <p><i class="fas fa-phone-alt me-2"></i>+012 345 67890</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@arbeg.com</p>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Açılış Saatleri Bölümü -->
+                <div class="col-md-3">
+                    <h5 class="text-warning mb-4">Açılış Saatleri</h5>
+                    <p>Pazartesi - Cumartesi: 09:00 - 03:00</p>
+                    <p>Pazar: 10:00 - 02:00</p>
+                </div>
+    
+                <!-- Haber Bülteni Bölümü -->
+                <div class="col-md-3">
+                    <h5 class="text-warning mb-4">Haber Bülteni</h5>
+                    <p>En son güncellemeler için bültenimize abone olun.</p>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="E-posta adresinizi girin" required>
+                            <button class="btn btn-warning" type="submit">Abone Ol</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    </body>
+        
